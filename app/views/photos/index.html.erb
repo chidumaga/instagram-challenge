@@ -1,0 +1,7 @@
+<% if @photos.any? %>
+  <% @photos.each do |photo| %>
+    <% photo %>
+  <% end %>
+<% else %>
+  Add a photo
+<% end %>

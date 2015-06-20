@@ -17,6 +17,17 @@ As usual please start by
 * Filling out your learning plan self review for the week: https://github.com/makersacademy/learning_plan (if you haven't already)
 * Forking this repo
 
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome). 
+Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
 
-Bonus if you can add filters! 
+Bonus if you can add filters!
+
+User Stories
+
+I want to be able to sign up
+I want to be able to sign in
+I want to be able to sign out
+
+I want to be able to post pics
+I want to be able to comment on pics
+I want to be able to like pics
+
