@@ -1,7 +1,29 @@
-<% if @photos.any? %>
-  <% @photos.each do |photo| %>
-    <% photo %>
+<div class="container">
+
+  <% if @photos.any? %>
+
+    <% @photos.each do |photo| %>
+      <div class="photo">
+        <%= photo.title %>
+        </br>
+        <%= image_tag photo.image.url(:medium) %>
+        </br>
+        <%= photo.caption %>
+        </br>
+        <% if photo.comments.any? %>
+          <% photo.comments.each do |comment| %>
+            <%= comment.comment %>
+            </br>
+          <% end %>
+        <% end %>
+    </div>
+
+      <%= link_to "Comment", new_photo_comment_path(photo) %>
+
+    <% end %>
+    <%= link_to "Add a photo", new_photo_path %>
+  <% else %>
+    <%= link_to "Add a photo", new_photo_path %>
   <% end %>
-<% else %>
-  Add a photo
-<% end %>
+
+</div>
